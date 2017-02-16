@@ -84,7 +84,9 @@ a {
 
 
 
+
 </style><script role="script" id="twine-user-script" type="text/twine-javascript">
+
 
 
 
@@ -118,7 +120,8 @@ $player was in een speelhuisje gaan zitten. Eigenlijk waren die  huisjes natuurl
 $player verwachtte een grote plons, maar die kwam niet. Het been van $char1 verdween helemaal in de modder, maar er klonk geen &quot;plons&quot;. $player hoorde niets. $char1 hoorde kennelijk ook niets, want $c1v keek heel vreemd op naar $player, terwijl $c1v met één been diep in de modder bleef staan. &quot;Zit je vast?&quot;, vroeg $player. $char1 reageerde niet meteen. $c1V keek een beetje geschrokken, alsof $c1v zelf ook niet goed begreep wat er was gebeurd. &quot;Ik... ik... ik weet het niet&quot;, stamelde $c1v. &quot;Hoezo weet je dat niet?&quot;, zei $player een beetje geërgerd. &quot;Je weet toch wel of je vast zit of niet?&quot;. &quot;Ik... ik denk... van niet&quot;, stotterde $char1. Langzaam trok $c1v haar been op uit de modder. Een paar seconden later, stond $c1v naast de enorme plas een beetje beteuterd om zich heen te kijken.
 
 $player wilde nu toch wel weten wat daar allemaal aan de hand was. Wat was die $char1 weer gek aan het doen zeg. $pV dacht, &quot;zal ik het nog even [[aankijken|4a]] of zal ik [[gaan helpen|4a1]]?&quot;.</tw-passagedata>
-<tw-passagedata pid="6" name="2a" tags="" position="300,400">&lt;&lt;set $playerGender = &quot;jongen&quot;&gt;&gt;
+<tw-passagedata pid="6" name="2a" tags="" position="300,400">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $playerGender = &quot;jongen&quot;&gt;&gt;
 
 &lt;&lt;if $playerGender === &quot;jongen&quot;&gt;&gt;
 	&lt;&lt;set $pv = &quot;hij&quot;&gt;&gt;
@@ -135,11 +138,12 @@ $player wilde nu toch wel weten wat daar allemaal aan de hand was. Wat was die $
 	&lt;&lt;set $pa = &quot;haar&quot;&gt;&gt;
 	&lt;&lt;set $pA = &quot;Haar&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-
+&lt;&lt;/nobr&gt;&gt;
 Ok, $player. Nu hebben we nog [[iemand|3]] nodig om het avontuur mee te beleven.
 
 </tw-passagedata>
-<tw-passagedata pid="7" name="2b" tags="" position="300,550">&lt;&lt;set $playerGender = $meisje&gt;&gt;
+<tw-passagedata pid="7" name="2b" tags="" position="300,550">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $playerGender = $meisje&gt;&gt;
 
 &lt;&lt;if $playerGender === $meisje&gt;&gt;
 	&lt;&lt;set $pv = &quot;ze&quot;&gt;&gt;
@@ -156,12 +160,13 @@ Ok, $player. Nu hebben we nog [[iemand|3]] nodig om het avontuur mee te beleven.
 	&lt;&lt;set $pa = &quot;hem&quot;&gt;&gt;
 	&lt;&lt;set $pA = &quot;Hem&quot;&gt;&gt;
 &lt;&lt;/if&gt;&gt;
-
+&lt;&lt;/nobr&gt;&gt;
 Ok, $player. Nu hebben we nog [[iemand|3]] nodig om het avontuur mee te beleven.</tw-passagedata>
 <tw-passagedata pid="8" name="3" tags="" position="450,450">&lt;&lt;set $char1 = prompt(&quot;Wie gaat er mee op avontuur?&quot;)&gt;&gt;
 
 Is dat een [[jongen|3a]] of een [[meisje|3b]]?</tw-passagedata>
-<tw-passagedata pid="9" name="3a" tags="" position="600,400">&lt;&lt;set $char1Gender = &quot;jongen&quot;&gt;&gt;
+<tw-passagedata pid="9" name="3a" tags="" position="600,400">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $char1Gender = &quot;jongen&quot;&gt;&gt;
 
 	&lt;&lt;set $c1v = &quot;hij&quot;&gt;&gt;
 	&lt;&lt;set $c1V = &quot;Hij&quot;&gt;&gt;
@@ -169,9 +174,10 @@ Is dat een [[jongen|3a]] of een [[meisje|3b]]?</tw-passagedata>
 	&lt;&lt;set $c1B = &quot;Zijn&quot;&gt;&gt;
 	&lt;&lt;set $c1a = &quot;hem&quot;&gt;&gt;
 	&lt;&lt;set $c1A = &quot;Hem&quot;&gt;&gt;
-
+&lt;&lt;nobr&gt;&gt;
 Goed $player, dan kunnen we nu [[beginnen|4]] met het verhaal. Hopelijk heeft $char1 er zin in.</tw-passagedata>
-<tw-passagedata pid="10" name="3b" tags="" position="600,550">&lt;&lt;set $char1Gender = &quot;meisje&quot;&gt;&gt;
+<tw-passagedata pid="10" name="3b" tags="" position="600,550">&lt;&lt;nobr&gt;&gt;
+&lt;&lt;set $char1Gender = &quot;meisje&quot;&gt;&gt;
 
 &lt;&lt;set $c1v = &quot;ze&quot;&gt;&gt;
 &lt;&lt;set $c1V = &quot;Ze&quot;&gt;&gt;
@@ -179,7 +185,7 @@ Goed $player, dan kunnen we nu [[beginnen|4]] met het verhaal. Hopelijk heeft $c
 &lt;&lt;set $c1B = &quot;Haar&quot;&gt;&gt;
 &lt;&lt;set $c1a = &quot;haar&quot;&gt;&gt;
 &lt;&lt;set $c1A = &quot;Haar&quot;&gt;&gt;
-
+&lt;&lt;/nobr&gt;&gt;
 Goed $player, dan kunnen we nu [[beginnen|4]] met het verhaal. Hopelijk heeft $char1 er zin in.</tw-passagedata>
 <tw-passagedata pid="11" name="4a" tags="" position="900,300">$player keek nog eens goed naar $char1. $c1V zat helemaal onder de modderspetters, maar $c1b been was eigenlijk nog opvallend schoon. Nou ja, het zat natuurlijk ook onder de modder, maar er zat niet meer modder op dan voordat $c1v in die enorme plas was gestapt.
 
@@ -268,7 +274,7 @@ $player haalde nogmaals $pb schouders op en keek achter zich naar $char1, die he
 
 &quot;Aha, dus jullie weten waar de trap is&quot;, vroeg $player? Weer knikten beide wolven. &quot;Ok, waar dan, wij zien hem niet&quot;, zei $player, die een beetje ongeduldig begon te worden. Beide wolven wezen tegelijk naar de overkant van de rivier. $player was heel verbaasd. &quot;Maar... maar wij komen van die kant.&quot; Ze wees ook achter zich. Pias piepte: &quot;Er is maar één trap en die is in het kasteel.&quot; $player keek naar de plek, waar de wolven naartoe wezen. &quot;Oh, dat is die grote vierkante berg&quot;, dacht $pv bij zichzelf. &quot;Raar&quot;, zei ze, &quot;maar het is een sprookje dus dingen zullen wel raar zijn&quot;, dacht $pv. &quot;Daar zitten ook alle kinderen&quot;, zei Paljas. &quot;Wat gemeen&quot;, zei char1. &quot;Iemand moet de kinderen redden!&quot;. $player dacht heel even na en zei: &quot;Misschien kunnen wij helpen. Als we in het kasteel komen kunnen we de kinderen redden en de trap vinden.&quot;
 
-De rivier stroomde duidelijk te hard om naar de andere kant te kunnen zwemmen. &quot;Hoe komen we daar dan?, vroeg $player&quot; Beide wolven haalden hun schouders op. &quot;Dat weten wij ook niet&quot;, zei Paljas. &quot;Daar hadden we het net over.&quot; Pias grabbelde wat in de zak van zijn broek en zei: &quot;We kunnen niet varen&quot;. $player zag, in de wollige poot van Pias, een heel, heel klein bootje liggen. &quot;Nee, daar kan alleen een mier mee varen&quot;, zei $player. Pias en Paljas schudden allebei hun hoofd. &quot;Als hij nat wordt, wordt hij groot&quot;, zei Paljas. &quot;Nou, hup dan&quot;, zei $player. Ze had het nu echt gehad met deze twee raren types. &quot;Maar... maar we kunnen niet [[varen|5b1b]]&quot;, zei Pias weer. $Player zuchte diep, liep naar de wolf toe en pakte het mini bootje. &quot;Kom hier&quot;, zei ze, &quot;ik doe het wel weer&quot;. </tw-passagedata>
+De rivier stroomde duidelijk te hard om naar de andere kant te kunnen zwemmen. &quot;Hoe komen we daar dan?, vroeg $player&quot; Beide wolven haalden hun schouders op. &quot;Dat weten wij ook niet&quot;, zei Paljas. &quot;Daar hadden we het net over.&quot; Pias grabbelde wat in de zak van zijn broek en zei: &quot;We kunnen niet varen&quot;. $player zag, in de wollige poot van Pias, een heel, heel klein bootje liggen. &quot;Nee, daar kan alleen een mier mee varen&quot;, zei $player. Pias en Paljas schudden allebei hun hoofd. &quot;Als hij nat wordt, wordt hij groot&quot;, zei Paljas. &quot;Nou, hup dan&quot;, zei $player. Ze had het nu echt gehad met deze twee raren types. &quot;Maar... maar we kunnen niet [[varen|5b1b]]&quot;, zei Pias weer. $player zuchte diep, liep naar de wolf toe en pakte het mini bootje. &quot;Kom hier&quot;, zei ze, &quot;ik doe het wel weer&quot;. </tw-passagedata>
 <tw-passagedata pid="23" name="5b1b" tags="" position="1800,450">$player bukte en hield het bootje in haar vuist in het water. Meteen begon het te groeien. $player liet snel los. $pV schrok, want het snel groeiende bootje, begon meteen weg te drijven. Even dacht $player dat ze de boot al meteen kwijt was, maar gelukkig... daar was $char1. $char1 pakte de boot goed vast aan de rand. $player sprong naar $char1 toe en deed hetzelfde. Samen hielden ze het bootje vast, terwijl het een echte boot begon te worden. Na een poosje hadden ze een mooie roeiboot beet, waar twee mensen, of wolven, tegelijk in zouden moeten kunnen. Tevreden keken ze elkaar aan. &quot;Zo, mooi samen opgelost&quot;, zei $player.
 
 $char1 knikte, maar keek ook direct weer naar de wolven. &quot;Ben je nog bang voor ze, vroeg $player?&quot; &quot;Die met dat gekke stemmetje is niet zo eng, maar die andere wel. Ik ga echt niet met hem alleen in de boot&quot;, zei $char1. Paljas hoorde haar kennelijk, want hij zei meteen: &quot;Niet onze boot stelen alsjeblieft! Dan komen we nooit aan de overkant.&quot; $player zuchte weer. &quot;Maak je geen zorgen&quot;, zei ze. &quot;We lossen dit samen wel op. Ik zal jullie alledrie naar de overkant brengen.&quot;
@@ -282,11 +288,11 @@ $player stapte in het bootje. Paljas volgde haar voorzichtig. Hij wilde duidelij
 
 Nadat $player naar de overkant was gevaren, stapte Paljas uit. &quot;Dank je wel&quot;, zei hij. &quot;Haal je nu ook Pias op?&quot; $player antwoordde: &quot;Ik zal er op de terugweg eens goed over nadenken&quot;. $pV draaide de boot en voer terug. Onderweg dacht ze: &quot;Wie zal ik nu meenemen: [[$char1|5b1b3a]] of [[Pias|5b1b3b]]&quot;?</tw-passagedata>
 <tw-passagedata pid="27" name="5b1c" tags="" position="2100,350">&quot;Wie zal ik meenemen: [[$char1|5b1b1]], [[Pias|5b1b2]] of [[Paljas|5b1b3]]?&quot;, dacht $player.</tw-passagedata>
-<tw-passagedata pid="28" name="5b1b3a" tags="" position="2100,500">Toen ze de overkant bereikte, wilde Pias snel in de boot springen, maar $player hield hem tegen. &quot;Hé, niet voordringen jij!&quot;, zei ze. &quot;Ik wist nog niet zeker wie ik eerst zou meenemen, maar nu wel. Wacht jij maar eventjes.&quot; Pias keek beteuterd toe, terwijl $char1 in het bootje stapte. $player draaide de boot om en voer weer naar de overkant.
+<tw-passagedata pid="28" name="5b1b3a" tags="" position="2100,500">Toen ze de overkant bereikten, wilde Pias snel in de boot springen, maar $player hield hem tegen. &quot;Hé, niet voordringen jij!&quot;, zei ze. &quot;Ik wist nog niet zeker wie ik eerst zou meenemen, maar nu wel. Wacht jij maar eventjes.&quot; Pias keek beteuterd toe, terwijl $char1 in het bootje stapte. $player draaide de boot om en voer weer naar de overkant.
 
 Toen ze daar aankwam, stapte $char1 voorzichtig uit. &quot;Dank je&quot;, zei $c1v. &quot;Ga je nu Pias halen?&quot;, vroeg Paljas. $player knikte &#39;ja&#39;, maar zag meteen dat $char1 niet blij keek. &quot;Wat is er, $char1?&quot;, vroeg $player. &quot;Moet ik dan alleen hier blijven met Paljas?&quot;, vroeg ze. &quot;Ooh ja, dat is waar ok&quot;, dacht $player. &quot;$char1 wil niet alleen zijn met Paljas.&quot;
 
-&quot;Hoe moet ik dat nu [[oplossen|5b1b5]]?&quot; /$pV moest Pias ophalen, maar $pv kon niet terugvaren, terwijl de $char1 en Paljas allebei aan de deze kant van de rivier bleven staan.
+&quot;Hoe moet ik dat nu [[oplossen|5b1b5]]?&quot; $pV moest Pias ophalen, maar $pv kon niet terugvaren, terwijl de $char1 en Paljas allebei aan de deze kant van de rivier bleven staan.
 
 &lt;&lt;set $tijdTotHint = 0&gt;&gt;</tw-passagedata>
 <tw-passagedata pid="29" name="5b1b3b" tags="" position="2100,650">Pias sprong al bijna in de boot, toen $pv de overkant nog niet eens had bereikt. &quot;He, doe je voorzichtig&quot;, zei $player, maar Pias zat al in de boot. $char1 zei: &quot;Het is goed, ik wacht nog wel even. Tot zo $player!&quot; $player lachte. Wat was die $char1 toch aardig. Ze draaide de boot weer om en voer naar de overkant.
@@ -460,12 +466,12 @@ test is true
 &quot;Niet nog eens drukken!&quot;, riep ze. &quot;Ik doe het weer!&quot; $player liet haar hand zakken. &quot;Oh, oh ok&quot;, mompelde $pv. &quot;Dat had ik bijna wel gedaan.&quot; &quot;Nee, nee, niet doen&quot;, zei het robotje. &quot;Je moet altijd precies doen wat er staat, anders kan er iets mis gaan.&quot; $player keek een beetje beteuterd. Bijna had $pv het verkeerd gedaan. Het robotje zag de teleurstelling bij $player. &quot;Het geeft niet&quot;, zei ze snel. &quot;Alles is nu goed. Jullie hebben me alweer [[gered|5c2]]!&quot;</tw-passagedata>
 <tw-passagedata pid="48" name="5c2" tags="" position="1950,750">$player haalde opgelucht adem. &quot;We doen ons best&quot;, zei $pv. &quot;Kom dan gaan we naar papa&quot;, zei ze. $player twijfelde even. &quot;We zijn eigenlijk op zoek naar een trap&quot;, zei $pv. &quot;Wat voor trap?&quot;, vroeg het robotmeisje. &quot;Wij hebben thuis wel een ladder. Die mag je wel gebruiken, als je wilt.&quot; $player glimlachte. &quot;Dat is aardig, maar we zoeken eigenlijk de trap naar huis.&quot;
 
-$player kon aan het meisje zien, dat ze er niets van begreep. $Pv dacht even na. &quot;Hoe kan ik dit nou uitleggen?&quot;, dacht $pv. &quot;Wij komen van een andere wereld&quot;, zei $player. &quot;We zijn hier gekomen met een trap, maar die is nu weg.&quot; De ogen van het meisje werden groot. Ze keek snel om zich heen. Het leek wel alsof ze wilde zien of niemand kon meeluisteren. Ze liep naar $player toe en fluisterde zachtjes in $pb oor. &quot;Papa heeft me verteld over die trap, maar ik dacht dat het een sprookje was&quot;.
+$player kon aan het meisje zien, dat ze er niets van begreep. $pV dacht even na. &quot;Hoe kan ik dit nou uitleggen?&quot;, dacht $pv. &quot;Wij komen van een andere wereld&quot;, zei $player. &quot;We zijn hier gekomen met een trap, maar die is nu weg.&quot; De ogen van het meisje werden groot. Ze keek snel om zich heen. Het leek wel alsof ze wilde zien of niemand kon meeluisteren. Ze liep naar $player toe en fluisterde zachtjes in $pb oor. &quot;Papa heeft me verteld over die trap, maar ik dacht dat het een sprookje was&quot;.
 
 $char1 giegelde. &quot;We zijn echt echt hoor, haha&quot;, lachte ze. &quot;Ik heet $char1&quot;, zei $char1. &quot;En dat is $player. Hoe heet jij?&quot; &quot;Ik heet Fee&quot;, zei het robotje. &quot;Wat een mooie naam&quot;, zei $player. &quot;Wel een beetje gekke naam voor een robotje&quot;, zei $char1. Het robotje keek boos naar $char1. &quot;Dat mag je niet zeggen!&quot;, zei ze boos. $char1 keek een beetje beteuterd. &quot;Sorry, je hebt gelijk.&quot; $player gaf $char1 een boze blik. &quot;Ze bedoelt het niet zo&quot;, zei ze tegen Fee. Fee dacht heel even na. &quot;Kom maar mee naar [[papa|5c3]]. Hij kan jullie misschien helpen.&quot;
 
 </tw-passagedata>
-<tw-passagedata pid="49" name="5c3" tags="" position="2101,802">De hele weg keken ze alle drie goed om zich heen, maar de man was nergens meer te vinden. Ook van de trap was geen spoor meer te bekennen. Het meisje vertelde er vrolijk op los. Het leek alsof ze nog nooit met andere kinderen had kunnen praten, zo blij was ze. $player1 en $char1 konden er geen woord tussen krijgen. Ze vertelde over het [[bos|5c4]] en haar [[vader|5c5]].</tw-passagedata>
+<tw-passagedata pid="49" name="5c3" tags="" position="2101,802">De hele weg keken ze alle drie goed om zich heen, maar de man was nergens meer te vinden. Ook van de trap was geen spoor meer te bekennen. Het meisje vertelde er vrolijk op los. Het leek alsof ze nog nooit met andere kinderen had kunnen praten, zo blij was ze. $player en $char1 konden er geen woord tussen krijgen. Ze vertelde over het [[bos|5c4]] en haar [[vader|5c5]].</tw-passagedata>
 <tw-passagedata pid="50" name="5c4" tags="" position="2251,954">&quot;Het bos is zo groot, dat er wel duizend bomen in staan. Ik heb ze nooit allemaal geteld, maar ik denk echt dat het er duizend zijn. Misschien nog wel meer! Er zijn plekken in het bos, waar het altijd donker is, omdat er zo veel bomen staan dat de zon niet door de takken heen kan komen. Maar er zijn ook heel mooie plekken. Ik vind de waterval heel erg mooi en de dieren zijn ook heel erg lief. Maar het liefste ben ik thuis bij [[papa|5c5]].&quot;</tw-passagedata>
 <tw-passagedata pid="51" name="5c5" tags="" position="2100,956">&quot;Papa is echt heel erg sterk! Hij is denk ik wel de sterkste man van de hele wereld. Nog veel sterker dan de koning, denk ik. Hij heeft ons huis helemaal zelf gebouwd. Hij heeft zelf de bomen omgehakt en daar balken van gemaakt. Toen heeft hij daarmee het hele huis gebouwd. Het is zo mooi. Ik heb ook mijn eigen kamer. Zelfs mijn bed en mijn kast heeft hij gemaakt. Oh, je moet zo maar eens komen [[kijken|5c6]].&quot;</tw-passagedata>
 <tw-passagedata pid="52" name="5c6" tags="" position="2252,801">&quot;Wat heb jij veel te vertellen&quot;, zei $player. Fee lachte vrolijk, &quot;ja hè? Ik heb het allemaal zelf gezien.&quot;
@@ -480,7 +486,7 @@ Inmiddels waren ze bij het huisje aangekomen. $player kon nu de tekeningetjes op
 
 Op een ander plaatje stond een grote draak. Voor de draak stond een andere man. Hij was ook heel erg groot, maar zag er ook heel aardig uit. Met een groot houten zwaard stond de man op het plaatje te zwaaien naar de draak. Op het volgende plaatje spuugde de draak vuur naar de man, maar die was net op tijd weggedoken. Weer één plaatje verder zat de man plotseling boven op de draak. Hij stak trots zijn houten zwaard in de lucht en de draak deed hem niets. &quot;Dat is papa&quot;, ze Fee, die gezien had dat $player naar de plaatjes stond te kijken. &quot;Wow, vecht jouw papa met draken?&quot;, vroeg $player verbaasd. Fee knikte trots. &quot;Ja en hij heeft er ook één getemd.&quot; Ze wees naar het plaatje, waar $player net naar had staan kijken.
 
-Toen viel het oog van $player op een plaatje op het midden van de grote deur. De andere plaatjes, waren heel mooi gemaakt en $player kon duidelijk zien dat ze allemaal heel nauwkeurig uit het hout waren gesneden. Maar dit plaatje was nog veel mooier. Ze keek eens goed. Op het plaatje was Fee&#39;s papa aan het werk met allemaal heel kleine spulletjes. Op zijn werkbank lagen kleine schroefjes en stangetjes. Er lag ook een bolletje touw, dat een beetje leek op het haar van Fee. Op het plaatje daaronder had de papa van Fee een klein hoofdje vast. Hij was heel precies werk aan het doen. Eén voor één was hij van het touw haartjes op het hoofdje aan het plakken. Op het onderste plaatje was hij klaar. Hij zat op een grote houten stoel en op zijn schoot zat een klein robotmeisje. &quot;Dat ben ik!&quot;, riep Fee blij. &quot;Heeft jouw papa jou zelf geb....&quot; $Pv wilde &quot;gebouwd&quot; zeggen, maar ze onderbrak haar zin. &quot;Fee vindt het niet leuk als je haar een robotje noemt&quot;, dacht ze. &quot;Geborsteld&quot;, maakte ze haar zin af. Fee schudde haar hoofd. &quot;Dan kan hij ook heel goed&quot;, zei ze trots.
+Toen viel het oog van $player op een plaatje op het midden van de grote deur. De andere plaatjes, waren heel mooi gemaakt en $player kon duidelijk zien dat ze allemaal heel nauwkeurig uit het hout waren gesneden. Maar dit plaatje was nog veel mooier. Ze keek eens goed. Op het plaatje was Fee&#39;s papa aan het werk met allemaal heel kleine spulletjes. Op zijn werkbank lagen kleine schroefjes en stangetjes. Er lag ook een bolletje touw, dat een beetje leek op het haar van Fee. Op het plaatje daaronder had de papa van Fee een klein hoofdje vast. Hij was heel precies werk aan het doen. Eén voor één was hij van het touw haartjes op het hoofdje aan het plakken. Op het onderste plaatje was hij klaar. Hij zat op een grote houten stoel en op zijn schoot zat een klein robotmeisje. &quot;Dat ben ik!&quot;, riep Fee blij. &quot;Heeft jouw papa jou zelf geb....&quot; $pV wilde &quot;gebouwd&quot; zeggen, maar ze onderbrak haar zin. &quot;Fee vindt het niet leuk als je haar een robotje noemt&quot;, dacht ze. &quot;Geborsteld&quot;, maakte ze haar zin af. Fee schudde haar hoofd. &quot;Dan kan hij ook heel goed&quot;, zei ze trots.
 
 $char1 wees op een plaatje van een man op een vreemd dier. &quot;Wat is dat voor dier?&quot;, vroeg $c1v. Op dat moment hoorden ze plotseling een vreemd geluid. &quot;Yakkerdeyakkerdeyak&quot;, klonk het vanuit het bos. &quot;Oooh, daar komt papa aan!&quot;, riep Fee. $player keek om en zag een man op het rare beest van het plaatje. [[&quot;Yakkerdeyak&quot;|7]], deed het beest weer.
 
@@ -492,7 +498,7 @@ $char1 wees op een plaatje van een man op een vreemd dier. &quot;Wat is dat voor
 
 De papa van Fee keek heel even blij naar Fee, maar toen keek hij met grote ogen naar $player en $char1. &quot;Dank je wel dat jullie Fee hebben geholpen&quot;, zei hij. Maar... wie zijn jullie eigenlijk? Ik heb jullie hier nog nooit gezien en ik heb heel veel gezien.
 
-&quot;Wij zijn $player en $char1&quot;, zei $player. &quot;Wij komen... ehm. Wij... wij komen uit... ehm.&quot; $player wist niet goed wat $pv moest zeggen. &quot;Ik kan het niet goed uitleggen. We waren aan het spelen en toen waren we ineens hier. Er was een grote trap en toen... toen waren we plotseling hier.&quot; $char1 knikte. &quot;Raar he?&quot;, zei c1v.
+&quot;Wij zijn $player en $char1&quot;, zei $player. &quot;Wij komen... ehm. Wij... wij komen uit... ehm.&quot; $player wist niet goed wat $pv moest zeggen. &quot;Ik kan het niet goed uitleggen. We waren aan het spelen en toen waren we ineens hier. Er was een grote trap en toen... toen waren we plotseling hier.&quot; $char1 knikte. &quot;Raar he?&quot;, zei $c1v.
 
 De papa van Fee dacht even na. Hij klopte zachtje op het hoofd van de Yak. Die zei natuurlijk &quot;Yakkerdeyak&quot;. Daarna nam hij $player en $char1 mee naar binnen in het huisje. Fee moest voor de Yak zorgen en bleef buiten. Hij vertelde, dat er heel lang geleden hier ook kinderen waren. Maar een boze man had alle kinderen gevangen en opgesloten in een groot kasteel aan de andere kant van de rivier. Hij vond het zo saai zonder kinderen, dat hij zelf Fee had gemaakt. Hij bedankte $player en $char1 nog een keer, omdat ze haar hadden gered. Net op dat moment hoorden ze haar buiten gillen. De yak brulde &quot;Yakkerdeyakkerdeyakyakyak!&quot;. Vlug gingen ze naar buiten.
 
@@ -500,9 +506,9 @@ Fee was weg. De yak stond wild te springen, maar zat vast aan een touw. &quot;Fe
 
 &lt;&lt;nobr&gt;&gt;
 &lt;&lt;if $char1Dapper === true&gt;&gt;
-$Player en $char1 keken elkaar aan en knikten allebei tegelijk. &quot;Wij gaan haar wel redden&quot;, zeiden ze allebei tegelijk. &quot;Dat gaat niet&quot;, zei de papa van Fee. &quot;Die man is nog gevaarlijker dan een draak!&quot; Ze schudden allebei hun hoofd. &quot;Wij kunnen hem aan&quot;, zei $char1 vastbesloten. &quot;Wat is die $char1 toch dapper&quot;, dacht $player.
+$player en $char1 keken elkaar aan en knikten allebei tegelijk. &quot;Wij gaan haar wel redden&quot;, zeiden ze allebei tegelijk. &quot;Dat gaat niet&quot;, zei de papa van Fee. &quot;Die man is nog gevaarlijker dan een draak!&quot; Ze schudden allebei hun hoofd. &quot;Wij kunnen hem aan&quot;, zei $char1 vastbesloten. &quot;Wat is die $char1 toch dapper&quot;, dacht $player.
 &lt;&lt;else&gt;&gt;
-$Player en $char1 keken elkaar aan en knikten allebei tegelijk. &quot;Wij gaan haar wel redden&quot;, zeiden ze allebei tegelijk. &quot;Dat gaat niet&quot;, zei de papa van Fee. &quot;Die man is nog gevaarlijker dan een draak!&quot; Ze schudden allebei hun hoofd. &quot;Wij kunnen hem aan&quot;, zei $player vastbesloten. We gaan er meteen achteraan.
+$player en $char1 keken elkaar aan en knikten allebei tegelijk. &quot;Wij gaan haar wel redden&quot;, zeiden ze allebei tegelijk. &quot;Dat gaat niet&quot;, zei de papa van Fee. &quot;Die man is nog gevaarlijker dan een draak!&quot; Ze schudden allebei hun hoofd. &quot;Wij kunnen hem aan&quot;, zei $player vastbesloten. We gaan er meteen achteraan.
 &lt;&lt;/if&gt;&gt;
 &lt;&lt;/nobr&gt;&gt;
 
@@ -541,9 +547,9 @@ Vlug liep $pv verder. $char1 volgde snel. Na een paar meter kwamen ze weer een d
 
 &lt;img src=&quot;http://www.renedenengelsman.nl/wordpress/wp-content/uploads/PaleishetLoo_Kersttafels_fotoSarisdenEngelsman_7144.jpg&quot;&gt;
 
-$pV liep stilletjes de kamer in. $char1 kwam snel achter $pa aan en deed vlug de deur dicht. &quot;Piiiieeeep&quot;, deed de deur. &quot;Wat een prachtige kamer&quot;, zei char1. &quot;Ik heb nog nooit een kamer gezien, die zo mooi was.&quot; Ze keken hun ogen uit. Op de tafel stonden prachtige bloemen en grote kandelaars met veel kaarsen erin. De messen en vorken leken wel van goud, zo blonken ze. Er hing ook een enorme spiegel. De schittering van de kaarsen weerspiegelde erin. Het leek wel een sprookje.
+$pV liep stilletjes de kamer in. $char1 kwam snel achter $pa aan en deed vlug de deur dicht. &quot;Piiiieeeep&quot;, deed de deur. &quot;Wat een prachtige kamer&quot;, zei $char1. &quot;Ik heb nog nooit een kamer gezien, die zo mooi was.&quot; Ze keken hun ogen uit. Op de tafel stonden prachtige bloemen en grote kandelaars met veel kaarsen erin. De messen en vorken leken wel van goud, zo blonken ze. Er hing ook een enorme spiegel. De schittering van de kaarsen weerspiegelde erin. Het leek wel een sprookje.
 
-&quot;We kunnen hier niet blijven&quot;, zei char1. &quot;Misschien komt er zo iemand. We moeten blijven zoeken naar de kinderen en de trap.&quot; $player knikte. &quot;Je hebt gelijk&quot;, zei $pv. In deze kamer waren drie deuren. Door de deur achter hen, waren ze binnen gekomen. $player dacht even na. &quot;Welke deur zal ik nemen?&quot;, dacht $pv. &quot;Gaan we door de deur [[links|07]] of [[rechts|06]]?&quot;</tw-passagedata>
+&quot;We kunnen hier niet blijven&quot;, zei $char1. &quot;Misschien komt er zo iemand. We moeten blijven zoeken naar de kinderen en de trap.&quot; $player knikte. &quot;Je hebt gelijk&quot;, zei $pv. In deze kamer waren drie deuren. Door de deur achter hen, waren ze binnen gekomen. $player dacht even na. &quot;Welke deur zal ik nemen?&quot;, dacht $pv. &quot;Gaan we door de deur [[links|07]] of [[rechts|06]]?&quot;</tw-passagedata>
 <tw-passagedata pid="59" name="05" tags="" position="2847,780">&lt;&lt;nobr&gt;&gt;
 &lt;&lt;set $hieroglyfen = prompt(&quot;De tekeningen heten...&quot;)&gt;&gt;
 
